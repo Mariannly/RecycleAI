@@ -19,23 +19,19 @@
     <div class="px-4 py-4 lg:px-16 lg:py-1" id="header">
         <div class="flex items-center justify-between">
             <div class="logo">
-                <img src="./img/logo-light.svg" alt="logo" class="hidden dark:block w-44">
-                <img src="./img/logo.svg" alt="logo" class="block dark:hidden w-44">
+                <img src="./img/logo_white.svg" alt="logo" class="hidden dark:block w-32">
+                <img src="./img/logo.svg" alt="logo" class="block dark:hidden w-32">
             </div>
             <div class="navigation hidden lg:block">
                 <nav>
                     <ul class="flex items-center justify-between">
                         <li class="px-6 py-4"><a href="#slider" class="menu-item">Home</a></li>
                         <li class="px-6 py-4"><a href="#features" class="menu-item">Features</a></li>
-                        <li class="px-6 py-4"><a href="#support" class="menu-item">Support</a></li>
-                        <li class="px-6 py-4"><a href="#pricing" class="menu-item">Pricing</a></li>
-                        <li class="px-6 py-4"><a href="#contact-us" class="menu-item">Contact Us</a></li>
+                        <li class="px-6 py-4"><a href="#getinvolved" class="menu-item">Get Involved</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="panel flex items-center">
-                <a href="" class="btn cursor-pointer text-neutral-900 py-3 px-2 hidden lg:block">sign in</a>
-                <a href="" class="btn cursor-pointer bg-[#4a6cf7] mr-6 py-3 hidden lg:block">sign Up</a>
                 <button type="button" class="cursor-pointer" id="change-mood">
                     <svg viewBox="0 0 23 23" class="cursor-pointer block dark:hidden" fill=""
                          xmlns="http://www.w3.org/2000/svg" width="30px">
@@ -58,15 +54,13 @@
 <div class="main" id="main">
     <div class="relative flex items-center h-screen px-6 lg:px-0 bg-white dark:bg-dark" id="slider">
         <div class="sticky z-10 w-full lg:w-2/5 2xl:w-1/2 mx-auto text-center mt-20">
-            <h1 class="heading text-3xl lg:text-5xl !leading-normal">Startup
-                Focused Tailwind CSS Template
+            <h1 class="heading text-3xl lg:text-5xl !leading-normal">RecycleAI
             </h1>
-            <p class="text-neutral-600 dark:text-gray-400 text-lg lg:text-xl font-medium leading-normal my-4">A Complete Tailwind
-                CSS Web Template Crafted for - Startup, SaaS, Business, Software and Agencies. Comes with high-quality
-                design and everything you need!
+            <p class="text-neutral-600 dark:text-gray-400 text-lg lg:text-xl font-medium leading-normal my-4">
+                We help cities, companies, and communities build smarter, greener futures through efficient and scalable waste solutions.
             </p>
             <div class="flex flex-col lg:flex-row items-center justify-center mt-8 p-6">
-                <a href="#pricing" class="btn bg-[#4a6cf7]">Get Started</a>
+                <a href="#getinvolved" class="btn bg-[#4a6cf7]">Get Started</a>
                 <a href="#features"
                    class="btn bg-[#090E34] text-neutral-900 bg-opacity-20 hover:bg-opacity-30 dark:bg-[#ffff64] dark:bg-opacity-10 dark:hover:bg-opacity-5">Learn
                     More</a>
@@ -172,14 +166,36 @@
             </svg>
         </div>
     </div>
+    <div class="py-20 md:py-24 bg-white dark:bg-dark bg-[url('/img/bg-help.svg')] bg-no-repeat bg-left-bottom bg-contain lg:bg-auto 2xl:bg-cover"
+         id="problem">
+        <div class="container mx-auto px-4">
+            <div class="lg:w-1/2 2xl:w-1/2 mx-auto text-center">
+                <h2 class="heading text-white text-3xl lg:text-5xl !leading-normal">We are
+                    ready to help
+                </h2>
+                <p class="text-gray-500 dark:text-gray-400 opacity-90 text-xl">Millions of tons of recyclable waste
+                    are lost every year due to poor sorting and outdated recycling systems. Manual sorting is inefficient,
+                    expensive, and exposes workers to health hazards. Cities and companies urgently need a scalable,
+                    data-driven solution that improves recycling rates and reduces environmental impact.
+                </p>
+            </div>
+            <div class="relative pt-16 mt-8 lg:mt-4">
+                <img src="./img/home-vector-2.png" class="absolute w-32 top-0 left-4 lg:left-48" alt="Icon Image">
+                <video src="./img/What happens to our 2.2 billion tons of trash_.mp4" controls loop poster="img/help-video-bg.png" preload="metadata"
+                       height="400" class="mx-auto rounded md:w-[600px] lg:w-[740px] sticky">
+                </video>
+            </div>
+        </div>
+    </div>
     <div class="py-20 md:py-24 bg-[#efefef] dark:bg-[#0b113a]" id="features">
         <div class="container px-4 mx-auto">
             <div class="w-full lg:w-1/2 2xl:w-1/2 mx-auto text-center">
                 <h2 class="heading text-3xl lg:text-5xl !leading-normal">Main
                     Features
                 </h2>
-                <p class="text-gray-500 dark:text-gray-400 text-xl">There are many variations of passages of Lorem Ipsum
-                    available but the majority have suffered alteration in some form.
+                <p class="text-gray-500 dark:text-gray-400 text-xl">RecycleAI is
+                    an intelligent waste management platform using artificial intelligence and spectroscopy
+                    to automate the classification and sorting of recyclable materials.
                 </p>
             </div>
             <div class="mt-10">
@@ -195,11 +211,10 @@
                             </div>
                             <div class="text-center">
                                 <h3 class="heading text-2xl mb-2 leading-normal">
-                                    Crafted for Startups
+                                    AI-Powered Classification
                                 </h3>
-                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">Tuae nam ex similique
-                                    incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam
-                                    perferendis earum sapiente non tempore? Fugit repellat ut maiores.
+                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">Neural networks analyze visual and 
+                                    spectral data to identify material types in real-time.
                                 </p>
                             </div>
                         </div>
@@ -215,11 +230,10 @@
                             </div>
                             <div class="text-center">
                                 <h3 class="heading text-2xl mb-2 leading-normal">
-                                    High-quality Design
+                                    Multisensor Integration
                                 </h3>
-                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">Tuae nam ex similique
-                                    incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam
-                                    perferendis earum sapiente non tempore? Fugit repellat ut maiores.
+                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">Combines computer vision and near-infrared (NIR) 
+                                    spectroscopy to improve material detection accuracy.
                                 </p>
                             </div>
                         </div>
@@ -234,12 +248,11 @@
                                 </svg>
                             </div>
                             <div class="text-center">
-                                <h3 class="heading text-2xl mb-2 leading-normal">All
-                                    Essential Components
+                                <h3 class="heading text-2xl mb-2 leading-normal">
+                                    Data Dashboard
                                 </h3>
-                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">Tuae nam ex similique
-                                    incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam
-                                    perferendis earum sapiente non tempore? Fugit repellat ut maiores.
+                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">A visual interface 
+                                    displays material types, volumes, and sorting metrics for performance tracking.
                                 </p>
                             </div>
                         </div>
@@ -255,11 +268,10 @@
                             </div>
                             <div class="text-center">
                                 <h3 class="heading text-2xl mb-2 leading-normal">
-                                    Speed Optimized
+                                    Automated Sorting System
                                 </h3>
-                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">Tuae nam ex similique
-                                    incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam
-                                    perferendis earum sapiente non tempore? Fugit repellat ut maiores.
+                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">Robotic arms or conveyor 
+                                    bifurcations automatically sort items into the correct recycling bins.
                                 </p>
                             </div>
                         </div>
@@ -275,11 +287,10 @@
                             </div>
                             <div class="text-center">
                                 <h3 class="heading text-2xl mb-2 leading-normal">
-                                    Fully Customizable
+                                    Scalable Design
                                 </h3>
-                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">Tuae nam ex similique
-                                    incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam
-                                    perferendis earum sapiente non tempore? Fugit repellat ut maiores.
+                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">Modular hardware 
+                                    and software adapt to small community centers or large industrial facilities.
                                 </p>
                             </div>
                         </div>
@@ -295,11 +306,11 @@
                             </div>
                             <div class="text-center">
                                 <h3 class="heading text-2xl mb-2 leading-normal">
-                                    Regular Updates
+                                    Adjustable Classification
                                 </h3>
-                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">Tuae nam ex similique
-                                    incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam
-                                    perferendis earum sapiente non tempore? Fugit repellat ut maiores.
+                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">Users can fine-tune 
+                                    the sorting criteria (e.g., by material, shape, contamination level) based on local 
+                                    recycling policies and goals.
                                 </p>
                             </div>
                         </div>
@@ -308,54 +319,34 @@
             </div>
         </div>
     </div>
-    <div class="py-20 md:py-24 bg-white dark:bg-dark bg-[url('/img/bg-help.svg')] bg-no-repeat bg-left-bottom bg-contain lg:bg-auto 2xl:bg-cover"
-         id="help">
-        <div class="container mx-auto px-4">
-            <div class="lg:w-1/2 2xl:w-1/2 mx-auto text-center">
-                <h2 class="heading text-white text-3xl lg:text-5xl !leading-normal">We are
-                    ready to help
-                </h2>
-                <p class="text-gray-500 dark:text-gray-400 opacity-90 text-xl">There are many variations of passages of
-                    Lorem Ipsum available but the majority have suffered alteration in some form.
-                </p>
-            </div>
-            <div class="relative pt-16 mt-8 lg:mt-4">
-                <img src="./img/home-vector-2.png" class="absolute w-32 top-0 left-4 lg:left-48" alt="Icon Image">
-                <video src="./img/help-video.mp4" controls loop poster="img/help-video-bg.png" preload="metadata"
-                       height="400" class="mx-auto rounded md:w-[600px] lg:w-[740px] sticky">
-                </video>
-            </div>
-        </div>
-    </div>
+    
     <div class="bg-white dark:bg-[url('/img/bg-support-dark.svg')] bg-center bg-cover bg-no-repeat dark:bg-dark pt-24 pb-10 px-1 lg:px-10 md:py-32"
-         id="support">
+         id="benefits">
         <div class="container flex flex-col lg:flex-row items-center justify-around px-4 lg:px-6 py-6 mx-auto">
             <div class="lg:w-1/2 2xl:w-1/2 mr-8 basis-1/2">
                 <div class="mx-auto my-4">
                     <h2 class="heading !leading-normal text-xl">
-                        Fast internet
-                        support
+                        Increases Efficientcy
                     </h2>
-                    <p class="text-gray-500 dark:text-gray-400 opacity-90 text-base">There are many variations of
-                        passages of Lorem Ipsum
-                        available but the majority have suffered alteration in some form.
+                    <p class="text-gray-500 dark:text-gray-400 opacity-90 text-base"> It increases sorting speed and accuracy, 
+                        reduces contamination in recycling streams, and                
+                        enables real-time performance monitoring.
                     </p>
                 </div>
                 <div class="flex flex-col lg:flex-row items-start justify-between mt-8">
                     <div class="my-3">
-                        <h3 class="heading leading-normal text-xl mb-2">Dynamic
-                            Structure
+                        <h3 class="heading leading-normal text-xl mb-2">Promotes
+                            Environmental Sustainability
                         </h3>
-                        <p class="text-base text-gratext-gray-500 dark:text-gray-400 opacity-90">we have 120+ smart
-                            unique features
+                        <p class="text-base text-gratext-gray-500 dark:text-gray-400 opacity-90">It supports circular economy initiatives.
                         </p>
                     </div>
                     <div class="my-3">
-                        <h3 class="heading font-black text-xl mb-2 leading-normal	">Smart
-                            Features
+                        <h3 class="heading font-black text-xl mb-2 leading-normal	">Lowers 
+                            Costs
                         </h3>
-                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">we have 120+ smart unique
-                            features
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">Lowers 
+                            operating costs over time.
                         </p>
                     </div>
                 </div>
@@ -367,7 +358,7 @@
             </div>
         </div>
     </div>
-    <div class="py-16 pt-10 md:py-20 bg-white dark:bg-dark" id="workflow">
+    <div class="py-16 pt-10 md:py-20 bg-white dark:bg-dark" id="getinvolved">
         <div class="container flex flex-col-reverse lg:flex-row items-center justify-between gap-12 px-4 md:px-8 mx-auto ">
             <div class="relative px-4 lg:px-16 basis-1/2 ">
                 <img src="./img/team-workflow.png" alt="img" style="border-radius: 50%100px" class="sticky z-10">
@@ -377,10 +368,11 @@
             <div class="relative mt-0 md:mt-16 lg:mt-0 basis-1/2 ">
                 <div class="mx-auto my-4 pr-8">
                     <h2 class="heading !leading-normal text-3xl lg:text-4xl">
-                        Fits Into Any Workflow.
+                        Get Involved
                     </h2>
-                    <p class="text-gray-500 dark:text-gray-400 opacity-90 text-base">our system goes with almost any
-                        kind of integrations and supports almost every platform.
+                    <p class="text-gray-500 dark:text-gray-400 opacity-90 text-base">Help us refine and grow 
+                        RecycleAI! Please fill out the short form below to tell us more about your needs, your 
+                        current waste management system, or if you're interested in testing or supporting this project.
                     </p>
                 </div>
                 <div class="my-4">
@@ -390,397 +382,10 @@
                                 <img src="./img/slack-logo.png" alt="img" class="w-2/3">
                             </div>
                             <div class="basis-2/3">
-                                <h4 class="workflow-title">Slack</h4>
-                                <p class="workflow-text">communication</p>
+                                <h4 class="workflow-title">Short Survey</h4>
+                                <p class="workflow-text">Click here!</p>
                             </div>
                         </div>
-                        <div class="tools-box">
-                            <div class="basis-1/3">
-                                <img src="./img/dropbox-logo.png" alt="img" class="w-2/3">
-                            </div>
-                            <div class="basis-2/3">
-                                <h4 class="workflow-title">DropBox</h4>
-                                <p class="workflow-text">Productivity</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-between my-4">
-                        <div class="tools-box">
-                            <div class="basis-1/3">
-                                <img src="./img/hubstaff-logo.png" alt="img" class="w-2/3">
-                            </div>
-                            <div class="basis-2/3">
-                                <h4 class="workflow-title">Slack</h4>
-                                <p class="workflow-text">communication</p>
-                            </div>
-                        </div>
-                        <div class="tools-box">
-                            <div class="basis-1/3">
-                                <img src="./img/Sketch_Logo.png" alt="img" class="w-2/3">
-                            </div>
-                            <div class="basis-2/3">
-                                <h4 class="workflow-title">DropBox</h4>
-                                <p class="workflow-text">Productivity</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-8 lg:mt-0">
-                    <a href="#" class="font-bold text-sky-400">View All Integrations -></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bg-white dark:bg-dark py-20 md:py-24" id="pricing">
-        <div class="container px-4 md:px-10 lg:px-0 mx-auto">
-            <div class="lg:w-1/2 2xl:w-1/2 mb-16 text-center mx-auto">
-                <h2 class="heading !leading-normal text-3xl lg:text-4xl">Simple
-                    and Affordable Pricing
-                </h2>
-                <p class="text-gray-500 dark:text-gray-400 opacity-90 text-lg">There are many variations of passages of
-                    Lorem Ipsum available but the majority have suffered alteration in some form.
-                </p>
-            </div>
-            <div class="flex flex-col lg:flex-row items-center justify-between gap-6 lg:px-6 mt-8 ">
-                <div class="price-table ml-0 lg:ml-8">
-                    <div class="price-title">
-                        <div class="flex justify-between mb-4">
-                            <h3 class="text-neutral-900 dark:text-white font-bold text-3xl">$40 <span
-                                    class="text-gray-500">/mo</span></h3>
-                            <h4 class="text-right text-neutral-900 dark:text-white font-medium text-2xl">Lite</h4>
-                        </div>
-                        <p class="text-gray-400 text-opacity-90 text-base font-medium">Lorem ipsum dolor sit amet
-                            adiscing elit Mauris egestas enim.
-                        </p>
-                        <button type="submit" class="btn price-btn bg-[#4a6cf7]">Start Free Trial</button>
-                        <hr class="my-10 bg-gray-600 text-gray-600 w-full opacity-30">
-                    </div>
-                    <div class="price-description">
-                        <ul>
-                            <li class="price-option">
-                              <span class="price-list-style">
-                                 <svg width="12" height="10" viewBox="0 0 8 6" class="fill-[#4a6cf7]">
-                                    <path d="M2.90567 6.00024C2.68031 6.00024 2.48715 5.92812 2.294 5.74764L0.169254 3.43784C-0.0560926 3.18523 -0.0560926 2.78827 0.169254 2.53566C0.39461 2.28298 0.74873 2.28298 0.974086 2.53566L2.90567 4.66497L7.02642 0.189715C7.25175 -0.062913 7.60585 -0.062913 7.83118 0.189715C8.0566 0.442354 8.0566 0.839355 7.83118 1.09198L3.54957 5.78375C3.32415 5.92812 3.09882 6.00024 2.90567 6.00024Z"></path>
-                                 </svg>
-                              </span>
-                                All UI Components
-                            </li>
-                            <li class="price-option">
-                              <span class="price-list-style">
-                                 <svg width="12" height="10" viewBox="0 0 8 6" class="fill-[#4a6cf7]">
-                                    <path d="M2.90567 6.00024C2.68031 6.00024 2.48715 5.92812 2.294 5.74764L0.169254 3.43784C-0.0560926 3.18523 -0.0560926 2.78827 0.169254 2.53566C0.39461 2.28298 0.74873 2.28298 0.974086 2.53566L2.90567 4.66497L7.02642 0.189715C7.25175 -0.062913 7.60585 -0.062913 7.83118 0.189715C8.0566 0.442354 8.0566 0.839355 7.83118 1.09198L3.54957 5.78375C3.32415 5.92812 3.09882 6.00024 2.90567 6.00024Z"></path>
-                                 </svg>
-                              </span>
-                                All UI Components
-                                Use with Unlimited
-                            </li>
-                            <li class="price-option">
-                              <span class="price-list-style">
-                                 <svg width="12" height="10" viewBox="0 0 8 6" class="fill-[#4a6cf7]">
-                                    <path d="M2.90567 6.00024C2.68031 6.00024 2.48715 5.92812 2.294 5.74764L0.169254 3.43784C-0.0560926 3.18523 -0.0560926 2.78827 0.169254 2.53566C0.39461 2.28298 0.74873 2.28298 0.974086 2.53566L2.90567 4.66497L7.02642 0.189715C7.25175 -0.062913 7.60585 -0.062913 7.83118 0.189715C8.0566 0.442354 8.0566 0.839355 7.83118 1.09198L3.54957 5.78375C3.32415 5.92812 3.09882 6.00024 2.90567 6.00024Z"></path>
-                                 </svg>
-                              </span>
-                                Commercial Use
-                            </li>
-                            <li class="price-option">
-                              <span class="price-list-style">
-                                 <svg width="12" height="10" viewBox="0 0 8 6" class="fill-[#4a6cf7]">
-                                    <path d="M2.90567 6.00024C2.68031 6.00024 2.48715 5.92812 2.294 5.74764L0.169254 3.43784C-0.0560926 3.18523 -0.0560926 2.78827 0.169254 2.53566C0.39461 2.28298 0.74873 2.28298 0.974086 2.53566L2.90567 4.66497L7.02642 0.189715C7.25175 -0.062913 7.60585 -0.062913 7.83118 0.189715C8.0566 0.442354 8.0566 0.839355 7.83118 1.09198L3.54957 5.78375C3.32415 5.92812 3.09882 6.00024 2.90567 6.00024Z"></path>
-                                 </svg>
-                              </span>
-                                Email Support
-                            </li>
-                            <li class="price-option">
-                              <span class="price-list-style">
-                                 <svg width="12" height="10" viewBox="0 0 8 6" class="fill-[#4a6cf7]">
-                                    <path d="M2.90567 6.00024C2.68031 6.00024 2.48715 5.92812 2.294 5.74764L0.169254 3.43784C-0.0560926 3.18523 -0.0560926 2.78827 0.169254 2.53566C0.39461 2.28298 0.74873 2.28298 0.974086 2.53566L2.90567 4.66497L7.02642 0.189715C7.25175 -0.062913 7.60585 -0.062913 7.83118 0.189715C8.0566 0.442354 8.0566 0.839355 7.83118 1.09198L3.54957 5.78375C3.32415 5.92812 3.09882 6.00024 2.90567 6.00024Z"></path>
-                                 </svg>
-                              </span>
-                                Lifetime Access
-                            </li>
-                            <li class="price-option">
-                              <span class="price-list-style">
-                                 <svg width="12" height="10" viewBox="0 0 8 6" class="fill-[#4a6cf7]">
-                                    <path d="M2.90567 6.00024C2.68031 6.00024 2.48715 5.92812 2.294 5.74764L0.169254 3.43784C-0.0560926 3.18523 -0.0560926 2.78827 0.169254 2.53566C0.39461 2.28298 0.74873 2.28298 0.974086 2.53566L2.90567 4.66497L7.02642 0.189715C7.25175 -0.062913 7.60585 -0.062913 7.83118 0.189715C8.0566 0.442354 8.0566 0.839355 7.83118 1.09198L3.54957 5.78375C3.32415 5.92812 3.09882 6.00024 2.90567 6.00024Z"></path>
-                                 </svg>
-                              </span>
-                                Free Lifetime Updates
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="absolute bottom-0 right-0">
-                        <svg width="179" height="158" viewBox="0 0 179 158" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.5"
-                                  d="M75.0002 63.256C115.229 82.3657 136.011 137.496 141.374 162.673C150.063 203.47 207.217 197.755 202.419 167.738C195.393 123.781 137.273 90.3579 75.0002 63.256Z"
-                                  fill="url(#paint0_linear_70:153)"></path>
-                            <path opacity="0.3"
-                                  d="M178.255 0.150879C129.388 56.5969 134.648 155.224 143.387 197.482C157.547 265.958 65.9705 295.709 53.1024 246.401C34.2588 174.197 100.939 83.7223 178.255 0.150879Z"
-                                  fill="url(#paint1_linear_70:153)"></path>
-                            <defs>
-                                <linearGradient id="paint0_linear_70:153" x1="69.6694" y1="29.9033" x2="196.108"
-                                                y2="83.2919" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#4A6CF7" stop-opacity="0.62"></stop>
-                                    <stop offset="1" stop-color="#4A6CF7" stop-opacity="0"></stop>
-                                </linearGradient>
-                                <linearGradient id="paint1_linear_70:153" x1="165.348" y1="-75.4466" x2="-3.75136"
-                                                y2="103.645" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#4A6CF7" stop-opacity="0.62"></stop>
-                                    <stop offset="1" stop-color="#4A6CF7" stop-opacity="0"></stop>
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                </div>
-                <div class="price-table">
-                    <div class="price-title">
-                        <div class="flex justify-between mb-4">
-                            <h3 class="text-neutral-900 dark:text-white font-bold text-3xl">$40 <span
-                                    class="text-gray-500">/mo</span></h3>
-                            <h4 class="text-right text-neutral-900 dark:text-white font-medium text-2xl">Lite</h4>
-                        </div>
-                        <p class="text-gray-400 text-opacity-90 text-base font-medium">Lorem ipsum dolor sit amet
-                            adiscing elit Mauris egestas enim.
-                        </p>
-                        <button type="submit" class="btn price-btn bg-[#4a6cf7]">Start Free Trial</button>
-                        <hr class="my-10 bg-gray-600 text-gray-600 w-full opacity-30">
-                    </div>
-                    <div class="price-description">
-                        <ul>
-                            <li class="price-option">
-                              <span class="price-list-style">
-                                 <svg width="12" height="10" viewBox="0 0 8 6" class="fill-[#4a6cf7]">
-                                    <path d="M2.90567 6.00024C2.68031 6.00024 2.48715 5.92812 2.294 5.74764L0.169254 3.43784C-0.0560926 3.18523 -0.0560926 2.78827 0.169254 2.53566C0.39461 2.28298 0.74873 2.28298 0.974086 2.53566L2.90567 4.66497L7.02642 0.189715C7.25175 -0.062913 7.60585 -0.062913 7.83118 0.189715C8.0566 0.442354 8.0566 0.839355 7.83118 1.09198L3.54957 5.78375C3.32415 5.92812 3.09882 6.00024 2.90567 6.00024Z"></path>
-                                 </svg>
-                              </span>
-                                All UI Components
-                            </li>
-                            <li class="price-option">
-                              <span class="price-list-style">
-                                 <svg width="12" height="10" viewBox="0 0 8 6" class="fill-[#4a6cf7]">
-                                    <path d="M2.90567 6.00024C2.68031 6.00024 2.48715 5.92812 2.294 5.74764L0.169254 3.43784C-0.0560926 3.18523 -0.0560926 2.78827 0.169254 2.53566C0.39461 2.28298 0.74873 2.28298 0.974086 2.53566L2.90567 4.66497L7.02642 0.189715C7.25175 -0.062913 7.60585 -0.062913 7.83118 0.189715C8.0566 0.442354 8.0566 0.839355 7.83118 1.09198L3.54957 5.78375C3.32415 5.92812 3.09882 6.00024 2.90567 6.00024Z"></path>
-                                 </svg>
-                              </span>
-                                All UI Components
-                                Use with Unlimited
-                            </li>
-                            <li class="price-option">
-                              <span class="price-list-style">
-                                 <svg width="12" height="10" viewBox="0 0 8 6" class="fill-[#4a6cf7]">
-                                    <path d="M2.90567 6.00024C2.68031 6.00024 2.48715 5.92812 2.294 5.74764L0.169254 3.43784C-0.0560926 3.18523 -0.0560926 2.78827 0.169254 2.53566C0.39461 2.28298 0.74873 2.28298 0.974086 2.53566L2.90567 4.66497L7.02642 0.189715C7.25175 -0.062913 7.60585 -0.062913 7.83118 0.189715C8.0566 0.442354 8.0566 0.839355 7.83118 1.09198L3.54957 5.78375C3.32415 5.92812 3.09882 6.00024 2.90567 6.00024Z"></path>
-                                 </svg>
-                              </span>
-                                Commercial Use
-                            </li>
-                            <li class="price-option">
-                              <span class="price-list-style">
-                                 <svg width="12" height="10" viewBox="0 0 8 6" class="fill-[#4a6cf7]">
-                                    <path d="M2.90567 6.00024C2.68031 6.00024 2.48715 5.92812 2.294 5.74764L0.169254 3.43784C-0.0560926 3.18523 -0.0560926 2.78827 0.169254 2.53566C0.39461 2.28298 0.74873 2.28298 0.974086 2.53566L2.90567 4.66497L7.02642 0.189715C7.25175 -0.062913 7.60585 -0.062913 7.83118 0.189715C8.0566 0.442354 8.0566 0.839355 7.83118 1.09198L3.54957 5.78375C3.32415 5.92812 3.09882 6.00024 2.90567 6.00024Z"></path>
-                                 </svg>
-                              </span>
-                                Email Support
-                            </li>
-                            <li class="price-option">
-                              <span class="price-list-style">
-                                 <svg width="12" height="10" viewBox="0 0 8 6" class="fill-[#4a6cf7]">
-                                    <path d="M2.90567 6.00024C2.68031 6.00024 2.48715 5.92812 2.294 5.74764L0.169254 3.43784C-0.0560926 3.18523 -0.0560926 2.78827 0.169254 2.53566C0.39461 2.28298 0.74873 2.28298 0.974086 2.53566L2.90567 4.66497L7.02642 0.189715C7.25175 -0.062913 7.60585 -0.062913 7.83118 0.189715C8.0566 0.442354 8.0566 0.839355 7.83118 1.09198L3.54957 5.78375C3.32415 5.92812 3.09882 6.00024 2.90567 6.00024Z"></path>
-                                 </svg>
-                              </span>
-                                Lifetime Access
-                            </li>
-                            <li class="price-option">
-                              <span class="price-list-style">
-                                 <svg width="12" height="10" viewBox="0 0 8 6" class="fill-[#4a6cf7]">
-                                    <path d="M2.90567 6.00024C2.68031 6.00024 2.48715 5.92812 2.294 5.74764L0.169254 3.43784C-0.0560926 3.18523 -0.0560926 2.78827 0.169254 2.53566C0.39461 2.28298 0.74873 2.28298 0.974086 2.53566L2.90567 4.66497L7.02642 0.189715C7.25175 -0.062913 7.60585 -0.062913 7.83118 0.189715C8.0566 0.442354 8.0566 0.839355 7.83118 1.09198L3.54957 5.78375C3.32415 5.92812 3.09882 6.00024 2.90567 6.00024Z"></path>
-                                 </svg>
-                              </span>
-                                Free Lifetime Updates
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="absolute bottom-0 right-0">
-                        <svg width="179" height="158" viewBox="0 0 179 158" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.5"
-                                  d="M75.0002 63.256C115.229 82.3657 136.011 137.496 141.374 162.673C150.063 203.47 207.217 197.755 202.419 167.738C195.393 123.781 137.273 90.3579 75.0002 63.256Z"
-                                  fill="url(#paint0_linear_70:153)"></path>
-                            <path opacity="0.3"
-                                  d="M178.255 0.150879C129.388 56.5969 134.648 155.224 143.387 197.482C157.547 265.958 65.9705 295.709 53.1024 246.401C34.2588 174.197 100.939 83.7223 178.255 0.150879Z"
-                                  fill="url(#paint1_linear_70:153)"></path>
-                            <defs>
-                                <linearGradient id="paint0_linear_70:153" x1="69.6694" y1="29.9033" x2="196.108"
-                                                y2="83.2919" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#4A6CF7" stop-opacity="0.62"></stop>
-                                    <stop offset="1" stop-color="#4A6CF7" stop-opacity="0"></stop>
-                                </linearGradient>
-                                <linearGradient id="paint1_linear_70:153" x1="165.348" y1="-75.4466" x2="-3.75136"
-                                                y2="103.645" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#4A6CF7" stop-opacity="0.62"></stop>
-                                    <stop offset="1" stop-color="#4A6CF7" stop-opacity="0"></stop>
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                </div>
-                <div class="price-table mr-0 lg:mr-8">
-                    <div class="price-title">
-                        <div class="flex justify-between mb-4">
-                            <h3 class="text-neutral-900 dark:text-white font-bold text-3xl">$40 <span
-                                    class="text-gray-500">/mo</span></h3>
-                            <h4 class="text-right text-neutral-900 dark:text-white font-medium text-2xl">Lite</h4>
-                        </div>
-                        <p class="text-gray-400 text-opacity-90 text-base font-medium">Lorem ipsum dolor sit amet
-                            adiscing elit Mauris egestas enim.
-                        </p>
-                        <button type="submit" class="btn price-btn bg-[#4a6cf7]">Start Free Trial</button>
-                        <hr class="my-10 bg-gray-600 text-gray-600 w-full opacity-30">
-                    </div>
-                    <div class="price-description">
-                        <ul>
-                            <li class="price-option">
-                              <span class="price-list-style">
-                                 <svg width="12" height="10" viewBox="0 0 8 6" class="fill-[#4a6cf7]">
-                                    <path d="M2.90567 6.00024C2.68031 6.00024 2.48715 5.92812 2.294 5.74764L0.169254 3.43784C-0.0560926 3.18523 -0.0560926 2.78827 0.169254 2.53566C0.39461 2.28298 0.74873 2.28298 0.974086 2.53566L2.90567 4.66497L7.02642 0.189715C7.25175 -0.062913 7.60585 -0.062913 7.83118 0.189715C8.0566 0.442354 8.0566 0.839355 7.83118 1.09198L3.54957 5.78375C3.32415 5.92812 3.09882 6.00024 2.90567 6.00024Z"></path>
-                                 </svg>
-                              </span>
-                                All UI Components
-                            </li>
-                            <li class="price-option">
-                              <span class="price-list-style">
-                                 <svg width="12" height="10" viewBox="0 0 8 6" class="fill-[#4a6cf7]">
-                                    <path d="M2.90567 6.00024C2.68031 6.00024 2.48715 5.92812 2.294 5.74764L0.169254 3.43784C-0.0560926 3.18523 -0.0560926 2.78827 0.169254 2.53566C0.39461 2.28298 0.74873 2.28298 0.974086 2.53566L2.90567 4.66497L7.02642 0.189715C7.25175 -0.062913 7.60585 -0.062913 7.83118 0.189715C8.0566 0.442354 8.0566 0.839355 7.83118 1.09198L3.54957 5.78375C3.32415 5.92812 3.09882 6.00024 2.90567 6.00024Z"></path>
-                                 </svg>
-                              </span>
-                                All UI Components
-                                Use with Unlimited
-                            </li>
-                            <li class="price-option">
-                              <span class="price-list-style">
-                                 <svg width="12" height="10" viewBox="0 0 8 6" class="fill-[#4a6cf7]">
-                                    <path d="M2.90567 6.00024C2.68031 6.00024 2.48715 5.92812 2.294 5.74764L0.169254 3.43784C-0.0560926 3.18523 -0.0560926 2.78827 0.169254 2.53566C0.39461 2.28298 0.74873 2.28298 0.974086 2.53566L2.90567 4.66497L7.02642 0.189715C7.25175 -0.062913 7.60585 -0.062913 7.83118 0.189715C8.0566 0.442354 8.0566 0.839355 7.83118 1.09198L3.54957 5.78375C3.32415 5.92812 3.09882 6.00024 2.90567 6.00024Z"></path>
-                                 </svg>
-                              </span>
-                                Commercial Use
-                            </li>
-                            <li class="price-option">
-                              <span class="price-list-style">
-                                 <svg width="12" height="10" viewBox="0 0 8 6" class="fill-[#4a6cf7]">
-                                    <path d="M2.90567 6.00024C2.68031 6.00024 2.48715 5.92812 2.294 5.74764L0.169254 3.43784C-0.0560926 3.18523 -0.0560926 2.78827 0.169254 2.53566C0.39461 2.28298 0.74873 2.28298 0.974086 2.53566L2.90567 4.66497L7.02642 0.189715C7.25175 -0.062913 7.60585 -0.062913 7.83118 0.189715C8.0566 0.442354 8.0566 0.839355 7.83118 1.09198L3.54957 5.78375C3.32415 5.92812 3.09882 6.00024 2.90567 6.00024Z"></path>
-                                 </svg>
-                              </span>
-                                Email Support
-                            </li>
-                            <li class="price-option">
-                              <span class="price-list-style">
-                                 <svg width="12" height="10" viewBox="0 0 8 6" class="fill-[#4a6cf7]">
-                                    <path d="M2.90567 6.00024C2.68031 6.00024 2.48715 5.92812 2.294 5.74764L0.169254 3.43784C-0.0560926 3.18523 -0.0560926 2.78827 0.169254 2.53566C0.39461 2.28298 0.74873 2.28298 0.974086 2.53566L2.90567 4.66497L7.02642 0.189715C7.25175 -0.062913 7.60585 -0.062913 7.83118 0.189715C8.0566 0.442354 8.0566 0.839355 7.83118 1.09198L3.54957 5.78375C3.32415 5.92812 3.09882 6.00024 2.90567 6.00024Z"></path>
-                                 </svg>
-                              </span>
-                                Lifetime Access
-                            </li>
-                            <li class="price-option">
-                              <span class="price-list-style">
-                                 <svg width="12" height="10" viewBox="0 0 8 6" class="fill-[#4a6cf7]">
-                                    <path d="M2.90567 6.00024C2.68031 6.00024 2.48715 5.92812 2.294 5.74764L0.169254 3.43784C-0.0560926 3.18523 -0.0560926 2.78827 0.169254 2.53566C0.39461 2.28298 0.74873 2.28298 0.974086 2.53566L2.90567 4.66497L7.02642 0.189715C7.25175 -0.062913 7.60585 -0.062913 7.83118 0.189715C8.0566 0.442354 8.0566 0.839355 7.83118 1.09198L3.54957 5.78375C3.32415 5.92812 3.09882 6.00024 2.90567 6.00024Z"></path>
-                                 </svg>
-                              </span>
-                                Free Lifetime Updates
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="absolute bottom-0 right-0">
-                        <svg width="179" height="158" viewBox="0 0 179 158" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.5"
-                                  d="M75.0002 63.256C115.229 82.3657 136.011 137.496 141.374 162.673C150.063 203.47 207.217 197.755 202.419 167.738C195.393 123.781 137.273 90.3579 75.0002 63.256Z"
-                                  fill="url(#paint0_linear_70:153)"></path>
-                            <path opacity="0.3"
-                                  d="M178.255 0.150879C129.388 56.5969 134.648 155.224 143.387 197.482C157.547 265.958 65.9705 295.709 53.1024 246.401C34.2588 174.197 100.939 83.7223 178.255 0.150879Z"
-                                  fill="url(#paint1_linear_70:153)"></path>
-                            <defs>
-                                <linearGradient id="paint0_linear_70:153" x1="69.6694" y1="29.9033" x2="196.108"
-                                                y2="83.2919" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#4A6CF7" stop-opacity="0.62"></stop>
-                                    <stop offset="1" stop-color="#4A6CF7" stop-opacity="0"></stop>
-                                </linearGradient>
-                                <linearGradient id="paint1_linear_70:153" x1="165.348" y1="-75.4466" x2="-3.75136"
-                                                y2="103.645" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#4A6CF7" stop-opacity="0.62"></stop>
-                                    <stop offset="1" stop-color="#4A6CF7" stop-opacity="0"></stop>
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="contact-us py-16 lg:px-6 bg-white dark:bg-dark" id="contact-us">
-        <div class="container flex flex-col lg:flex-row items-stretch justify-center gap-8 px-4 md:px-10 lg:px-0 mx-auto">
-            <div class="ticket basis-2/3 ml-0 lg:ml-8 bg-gray-dark dark:bg-slate-800 rounded">
-                <div class="py-16 px-6 lg:px-12">
-                    <div class="form-title">
-                        <h2 class="heading text-2xl lg:text-3xl font-bold !leading-normal">
-                            Need Help? Open a Ticket
-                        </h2>
-                        <p class="text-gray-500 dark:text-gray-400 text-opacity-90 text-base font-bold">Our support team
-                            will get back to you ASAP via email.
-                        </p>
-                    </div>
-                    <div class="form-contact mt-10">
-                        <form action="#">
-                            <div class="flex flex-col lg:flex-row justify-center items-center mt-2 mb-6">
-                                <div class="flex flex-col basis-full w-full lg:basis-1/2 mr-0 lg:mr-3 my-3 lg:my-0">
-                                    <label for="name" class="form-label">Your Name</label>
-                                    <input type="text" id="name" class="form-input" required
-                                           placeholder="Enter Your Name">
-                                </div>
-                                <div class="flex flex-col basis-full w-full lg:basis-1/2 ml-0 lg:ml-3 my-3 lg:my-0">
-                                    <label for="email" class="form-label">Your Email</label>
-                                    <input type="email" id="email" class="form-input" required
-                                           placeholder="Enter Your Email">
-                                </div>
-                            </div>
-                            <div class="flex flex-col my-4">
-                                <label for="message" class="form-label">Your Message</label>
-                                <textarea name="message" id="message" cols="30" rows="5"
-                                          placeholder="Enter Your Message" class="resize-none form-input"
-                                          required></textarea>
-                            </div>
-                            <div class="mt-4">
-                                <button type="submit" class="btn bg-[#4a6cf7] opacity-90 py-3">Submit Ticket</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="subscribe basis-1/3 mr-0 lg:mr-8 rounded bg-gray-dark">
-                <div class="py-16 px-6 lg:px-12">
-                    <div class="form-title">
-                        <h2 class="heading text-2xl lg:text-3xl !leading-normal">
-                            Subscribe to receive future updates
-                        </h2>
-                        <p class="text-gray-500 dark:text-gray-400 text-opacity-90 text-base font-bold">Lorem ipsum
-                            dolor sited Sed ullam corper consectur adipiscing Mae ornare massa quis lectus.
-                        </p>
-                        <hr class="w-full my-12 bg-gray-600 text-gray-600 opacity-30">
-                    </div>
-                    <div class="form-contact mt-10">
-                        <form action="#">
-                            <div class="mt-2 mb-3">
-                                <input type="text" id="phone" class="block w-[100%] my-3 form-input" required
-                                       placeholder="Enter Your Name">
-                                <input type="email" id="address" class="block w-[100%] my-3 form-input" required
-                                       placeholder="Enter Your Email">
-                                <button type="submit"
-                                        class="btn bg-[#4a6cf7] opacity-90 py-3 block w-full border border-transparent">
-                                    Subscribe
-                                </button>
-                            </div>
-                            <p class="text-gray-400 text-opacity-90 text-base font-bold mt-6 text-center">No spam
-                                guaranteed, So please don’t send any spam mail.
-                            </p>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -791,11 +396,10 @@
             <div class="container flex md:flex-row flex-wrap lg:flex-nowrap items-start justify-between px-4 mx-auto">
                 <div class="basis-full lg:basis-1/3 mb-6 lg:mb-0">
                     <div class="footer-logo mb-7">
-                        <img src="./img/logo-light.svg" alt="logo" class="hidden dark:block">
-                        <img src="./img/logo.svg" alt="logo" class="block dark:hidden">
+                        <img src="./img/logo_white.svg" alt="logo" class="hidden dark:block w-32">
+                        <img src="./img/logo.svg" alt="logo" class="block dark:hidden w-32">
                     </div>
-                    <p class="text-gray-500 dark:text-gray-400 opacity-90 text-lg">Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. A alias atque aut, consequatur
+                    <p class="text-gray-500 dark:text-gray-400 opacity-90 text-lg">Contact Us!
                     </p>
                     <div class="mt-8">
                         <a href="" class="social">
